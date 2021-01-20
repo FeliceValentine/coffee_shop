@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;1,400&family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.page_wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    padding: 0 25px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+nav a {
+    text-decoration: none;
+}
+a:link { 
+    color: #555;
+}  
+a:visited { 
+    color: #000;
+}
+a:hover { 
+    color: #eb444d;
+    scale: (1.1); /*not working? */
+}
+a:active { 
+    color: #913f78; 
+ }
+
+header {
+    background: url(img/header.jpg) no-repeat #fff;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: 'Bodoni Moda', serif;
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 3px 1px #444;
+}
+header p {
+    color: #fff;
+    font-size: 1.70rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 1px #444;
+}
+
+.about_us, .menu, .contact {
+    margin: 2rem 0;
+    padding: 10px;
+    background: #d3c8c1;
+    border-radius: 10px;
+    text-align: center;
+}
+.contact {
+    background: #ebe2dc;
+}
+h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2.25rem;
+    border-bottom: 5px solid #b3a49d;
+}
+h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+.about_us p, .menu p {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+
+}
+.about_us_gallery {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about_us_gallery img {
+    max-width: 15vw;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.about_us_gallery img:hover {
+    transform: rotate(5deg);
+}
+.menu_box {
+    display: flex;
+    justify-content: center;
+    margin: 1rem; 
+    text-align:left
+}
+/*list is moving things a bit to the right so -margin is fixing it */
+.menu_box1 {
+    margin-left: -3rem;
+}
+.menu li {
+    padding: 0.30rem;
+    list-style-type: circle;
+    font-size: 1.25rem;
+}
+
+.second_gallery {
+
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.left_form {
+    display: flex;
+}
+.right_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+input, textarea {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0.5rem;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+input {
+    width: 195px;
+}
+#input-submit {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
